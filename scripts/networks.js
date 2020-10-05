@@ -16,10 +16,10 @@ module.exports = {
       txUrl: 'https://dashboard.tenderly.co/tx/ropsten/',
       // addressUrl: 'https://ropsten.etherscan.io/address/',
       // txUrl: 'https://ropsten.etherscan.io/tx/',
-      gyen: '0x1a1FE778E4026aB3677b402E232Ac7C35E318f05',
-      zusd: '0x989bE8F86DbE3e5DD98e3E54982C941a09a15B84',
+      gyen: '0x89Ebdb14400a13e956A5Be01EE38b8eA0eDd6b6e',
+      zusd: '0x4E50a95B7c7bcbCDBB689ccf668d62cE107F62f5',
       relayHub: '0xF0851c3333a9Ba0D61472de4C0548F1160F95f17',
-      paymaster: '0x4aa21CdEba9dfEC2C2621b83a15262a41C67aC67',
+      paymaster: '0x62dd8DC97d43FaD1558209627908896299831d37',
       forwarder: '0x766400B526fB5889AE6C52b369671F5eE137880b'
     }
   }
