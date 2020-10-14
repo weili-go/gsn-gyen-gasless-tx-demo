@@ -6,6 +6,7 @@ import '../styles/app.css'
 import Web3 from 'web3'
 import contract from 'truffle-contract'
 
+
 // Import our contract artifacts and turn them into usable abstractions.
 // import metaCoinArtifact from '../../build/contracts/MetaCoin.json'
 // import IPaymaster from '../../build/contracts/IPaymaster.json'
@@ -114,6 +115,10 @@ const App = {
     return rr
   },
 
+  delay: async function(ms){
+    return await new Promise(resolve => setTimeout(resolve, ms));
+  },
+
   link: function (path, text) {
     return '<a href="' + network.baseurl + path + '">' + text + '</a>'
   },
@@ -207,9 +212,15 @@ const App = {
 
       self.refreshBalance()
       self.setStatus('Mint transaction complete!<br>\n' + self.txLink(res.tx))
-      const have2 = await self.getPaid()
-      console.log("have1-2: ",have1)
-      console.log("have2: ",have2)
+      let have2 = await self.getPaid()
+      //console.log("have1-2: ",have1)
+      console.log("have1----------------: ",have1)
+      
+      while(have1 == have2){
+        await self.delay(1000)
+        have2 = await self.getPaid()
+      }
+      console.log("have2----------------: ",have2) 
       self.setPaidEth(have1-have2)
 
     }).catch(function (err) {
@@ -243,9 +254,15 @@ const App = {
     }).then(async function (res) {
       self.setStatus('Transaction complete!<br>\n' + self.txLink(res.tx))
       self.refreshBalance()
-      const have2 = await self.getPaid()
-      console.log("have1-2: ",have1)
-      console.log("have2: ",have1)
+      let have2 = await self.getPaid()
+      //console.log("have1-2: ",have1)
+      console.log("have1----------------: ",have1)
+      
+      while(have1 == have2){
+        await self.delay(500)
+        have2 = await self.getPaid()
+      }
+      console.log("have2----------------: ",have2) 
       self.setPaidEth(have1-have2)
 
     }).catch(function (e) {
@@ -254,6 +271,7 @@ const App = {
     })
   }
 }
+
 
 window.App = App
 window.addEventListener('load', async () => {
