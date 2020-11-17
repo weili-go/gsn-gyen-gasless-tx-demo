@@ -5,22 +5,22 @@ module.exports = {
       txUrl: 'https://dashboard.tenderly.co/tx/kovan/',
       // addressUrl: 'https://kovan.etherscan.io/address/',
       // txUrl: 'https://kovan.etherscan.io/tx/',
-      gyen: '0x0BFa7Ab9F16f7a89323c1f89089d12788e6C22A5',
-      zusd: '0xfe738253a9e0943e881d0844285e50F8a0123d19', 
-      relayHub: '0xcfcb6017e8ac4a063504b9d31b4AbD618565a276',
-      paymaster: '0x569D1065E647a82F466B96a58cCB0633221569B0',
-      forwarder: '0x663946D7Ea17FEd07BF1420559F9FB73d85B5B03'
+      gyen: '0x6C8c489167cd40B6a609Fa37d832F35B556aE617',
+      zusd: '0xf2e259598BC5D27BD71e066e86884F3275Ce30f6', 
+      relayHub: '0xE9dcD2CccEcD77a92BA48933cb626e04214Edb92',
+      paymaster: '0x1Ed32Ec494e62C7A57c0a1979488E77a212B7EB9',
+      forwarder: '0x0842Ad6B8cb64364761C7c170D0002CC56b1c498'
     },
     3: {
       addressUrl: 'https://dashboard.tenderly.co/contract/ropsten/',
       txUrl: 'https://dashboard.tenderly.co/tx/ropsten/',
       // addressUrl: 'https://ropsten.etherscan.io/address/',
       // txUrl: 'https://ropsten.etherscan.io/tx/',
-      gyen: '0x89Ebdb14400a13e956A5Be01EE38b8eA0eDd6b6e',
-      zusd: '0x4E50a95B7c7bcbCDBB689ccf668d62cE107F62f5',
-      relayHub: '0xF0851c3333a9Ba0D61472de4C0548F1160F95f17',
-      paymaster: '0x62dd8DC97d43FaD1558209627908896299831d37',
-      forwarder: '0x766400B526fB5889AE6C52b369671F5eE137880b'
+      gyen: '0xC82aF3f91947486b398990657cA16Cf86D643C19',
+      zusd: '0x01C12adbD00aE8147D65171ED1F15a5bB642802f',
+      relayHub: '0x29e41C2b329fF4921d8AC654CEc909a0B575df20',
+      paymaster: '0x38339eA061089ABf8b640e145f9Ec477969d3d72',
+      forwarder: '0x25CEd1955423BA34332Ec1B60154967750a0297D'
     }
   }
 }

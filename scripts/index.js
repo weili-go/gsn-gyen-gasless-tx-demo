@@ -59,8 +59,8 @@ const App = {
         process.exit(-1)
       }
       const gsnConfig = await resolveConfigurationGSN(window.ethereum, {
-        verbose: true,
-        methodSuffix: '_v4',
+        verbose: window.location.href.includes('verbose'),
+        //methodSuffix: '_v4',
         jsonStringifyRequest: true,
         chainId: networkId,
         forwarderAddress: network.forwarder,
@@ -68,6 +68,7 @@ const App = {
         gasPriceFactorPercent: 70,
         relayLookupWindowBlocks: 1e5
       })
+      console.log('===config=', gsnConfig)
       var provider = new RelayProvider(web3.currentProvider, gsnConfig)
       web3.setProvider(provider)
 
