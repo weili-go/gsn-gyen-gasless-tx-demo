@@ -49,7 +49,7 @@ const App = {
       }
       if (!network) {
         const fatalmessage = document.getElementById('fatalmessage')
-        fatalmessage.innerHTML = "Wrong network. please switch to 'kovan' or 'ropsten'"
+        fatalmessage.innerHTML = "Wrong network. please switch to 'kovan' or 'ropsten' or 'rinkeby'"
         return
       }
       console.log('chainid=', networkId, network)

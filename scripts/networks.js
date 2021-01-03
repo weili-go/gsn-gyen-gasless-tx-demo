@@ -21,6 +21,17 @@ module.exports = {
       relayHub: '0x29e41C2b329fF4921d8AC654CEc909a0B575df20',
       paymaster: '0x38339eA061089ABf8b640e145f9Ec477969d3d72',
       forwarder: '0x25CEd1955423BA34332Ec1B60154967750a0297D'
-    }
+    },
+    4: {
+      addressUrl: 'https://dashboard.tenderly.co/contract/rinkeby/',
+      txUrl: 'https://dashboard.tenderly.co/tx/rinkeby/',
+      // addressUrl: 'https://ropsten.etherscan.io/address/',
+      // txUrl: 'https://ropsten.etherscan.io/tx/',
+      gyen: '0xC021ef8b81153E9Ef644036B82DE7a451a7B719f',
+      zusd: '0x5736cFbCfd665BCF0D2Fe546b942E626ff91687E',
+      relayHub: '0x53C88539C65E0350408a2294C4A85eB3d8ce8789',
+      paymaster: '0x02e55f878E81AD01131870e1b46B732331f45EaC',
+      forwarder: '0x956868751Cc565507B3B58E53a6f9f41B56bed74'
+    },
   }
 }
